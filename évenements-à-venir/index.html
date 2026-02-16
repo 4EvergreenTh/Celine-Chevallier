@@ -9,10 +9,61 @@
 	</head>
 	<body>
 
-		<div id="banner">
-			<h1 id="title">Céline Chevallier</h1>
 
-			<p id="titleDesc"> 
+
+
+		<div id="banner">
+			<div>
+				<img src="../IMG/PHONE_menu.png" id="openSidebar" class="trigger-image mobile-only" draggable="false"/>
+				<h1 id="title">Céline Chevallier</h1>
+				<img src="../IMG/logo.avif" class="mobile-only" alt="Logo" draggable="false">
+			</div>
+
+			<section id="sidebar">
+				<button id="closeSidebar">✕</button>
+				<button onclick="location.href='../'">Accueil</button>
+				<button onclick="location.href='../types-de-soins/'">Types de soins</button>
+				<button id="currentButton">Événements à venir</button>
+				<button onclick="location.href='../formations-à-venir/'">Formations à venir</button>
+				<button onclick="location.href='../mon-parcour/'">Mon parcour</button>
+				<button onclick="location.href='../lives-facebook/'">Lives Facebook</button>
+				<button onclick="location.href='../galerie-cabinet-de-soin/'">Galerie cabinet de soin</button>
+				<button onclick="location.href='../contact/'">Contact</button>
+			</section>
+
+			
+			<div id="overlay"></div>
+
+			<script>
+				const openBtn = document.getElementById("openSidebar");
+				const closeBtn = document.getElementById("closeSidebar");
+				const sidebar = document.getElementById("sidebar");
+				const overlay = document.getElementById("overlay");
+
+				openBtn.addEventListener("click", () => {
+					sidebar.classList.add("active");
+					overlay.classList.add("active");
+				});
+
+				closeBtn.addEventListener("click", () => {
+					sidebar.classList.remove("active");
+					overlay.classList.remove("active");
+				});
+
+				overlay.addEventListener("click", () => {
+					sidebar.classList.remove("active");
+					overlay.classList.remove("active");
+				});
+			</script>
+
+
+
+
+
+
+
+
+			<p id="titleDesc" class="pc-only"> 
 				Médiumnité, Canalisations au Pendule, 
 				<br>
 				Soins Énergétiques, Massages Intuitifs,
@@ -24,21 +75,32 @@
 		</div>
 
 		<div id="underBanner">
+			<p id="titleDesc" class="mobile-only"> 
+				Médiumnité, Canalisations au Pendule, 
+				<br>
+				Soins Énergétiques, Massages Intuitifs,
+				<br>
+				Purification des Corps Éthériques
+				<br>
+				et des Lieux Formatrice
+			</p>
+
 			<img src="../IMG/portrait.avif" alt="Celine Chevallier">
 
-			<div id="navBar2">
-				<button onclick="location.href='../'">Accueil</button>
-				<button onclick="location.href='../types-de-soins/'">Types de soins</button>
-				<button id="currentButton">Événements à venir</button>
-				<button onclick="location.href='../formations-à-venir/'">Formations à venir</button>
-				<button onclick="location.href='../mon-parcour/'">Mon parcour</button>
-				<button onclick="location.href='../lives-facebook/'">Lives Facebook</button>
-				<button onclick="location.href='../galerie-cabinet-de-soin/'">Galerie cabinet de soin</button>
-				<button onclick="location.href='../contact/'">Contact</button>
+			<div id="navBar2" class="pc-only" class="pc-only">
+				<button onclick="location.href='../'" class="pc-only">Accueil</button>
+				<button onclick="location.href='../types-de-soins/'" class="pc-only">Types de soins</button>
+				<button id="currentButton" class="pc-only">Événements à venir</button>
+				<button onclick="location.href='../formations-à-venir/'" class="pc-only">Formations à venir</button>
+				<button onclick="location.href='../mon-parcour/'" class="pc-only">Mon parcour</button>
+				<button onclick="location.href='../lives-facebook/'" class="pc-only">Lives Facebook</button>
+				<button onclick="location.href='../galerie-cabinet-de-soin/'" class="pc-only">Galerie cabinet de soin</button>
+				<button onclick="location.href='../contact/'" class="pc-only">Contact</button>
 			</div>
 
-			<img src="../IMG/logo.avif" alt="Logo">
+			<img src="../IMG/logo.avif" alt="Logo" class="pc-only">
 		</div>
+
 
 
 		<section id="events">
