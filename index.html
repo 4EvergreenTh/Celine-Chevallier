@@ -9,8 +9,67 @@
 	</head>
 	<body>
 
+
+
+
+
+
+
+
+
+
+
+
 		<div id="banner">
-			<h1 id="title">Céline Chevallier</h1>
+			<div>
+				<img src="IMG/PHONE_menu.png" id="openSidebar" class="trigger-image" draggable="false"/>
+				<h1 id="title">Céline Chevallier</h1>
+				<img src="IMG/logo.avif" alt="Logo" draggable="false">
+			</div>
+
+			<section id="sidebar">
+				<button id="closeSidebar">✕</button>
+				<button id="currentButton">Accueil</button>
+				<button onclick="location.href='types-de-soins/'">Types de soins</button>
+				<button onclick="location.href='évenements-à-venir/'">Événements à venir</button>
+				<button onclick="location.href='formations-à-venir/'">Formations à venir</button>
+				<button onclick="location.href='mon-parcour/'">Mon parcour</button>
+				<button onclick="location.href='lives-facebook/'">Lives Facebook</button>
+				<button onclick="location.href='galerie-cabinet-de-soin/'">Galerie cabinet de soin</button>
+				<button onclick="location.href='contact/'">Contact</button>
+			</section>
+
+			
+			<div id="overlay"></div>
+
+			<script>
+				const openBtn = document.getElementById("openSidebar");
+				const closeBtn = document.getElementById("closeSidebar");
+				const sidebar = document.getElementById("sidebar");
+				const overlay = document.getElementById("overlay");
+
+				openBtn.addEventListener("click", () => {
+					sidebar.classList.add("active");
+					overlay.classList.add("active");
+				});
+
+				closeBtn.addEventListener("click", () => {
+					sidebar.classList.remove("active");
+					overlay.classList.remove("active");
+				});
+
+				overlay.addEventListener("click", () => {
+					sidebar.classList.remove("active");
+					overlay.classList.remove("active");
+				});
+			</script>
+
+
+
+
+
+
+
 
 			<p id="titleDesc"> 
 				Médiumnité, Canalisations au Pendule, 

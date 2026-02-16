@@ -88,15 +88,6 @@ a {
 section {
  	width: 100%;
 	min-height: 100vh;
-
-	background: linear-gradient(var(--angleGradient),
-		var(--colorBackgroundOpacity),
-		var(--colorBackgroundOpacity),
-		var(--colorBackgroundAccentOpacity),
-		var(--colorBackgroundOpacity),
-		var(--colorBackgroundOpacity)
-	);
-	backdrop-filter: blur(5px);
 }
 
 
@@ -157,6 +148,21 @@ button:hover p {
 	justify-content: space-evenly;
 }
 
+#banner div {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#banner div img {
+	width: 8vw;
+
+}
+
+
+
+
 #title {
 	color: var(--colorMain);
 	text-shadow: rgba(0, 0, 0, 0.4) 0px 4px 5px;
@@ -187,6 +193,95 @@ button:hover p {
 #underBanner img {
 	object-fit: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Image */
+.trigger-image {
+  width: 200px;
+  cursor: pointer;
+}
+
+/* Sidebar */
+#sidebar {
+  position: fixed;
+  top: 0;
+  left: -340px;          /* hidden */
+  width: 300px;
+  height: 100%;
+  background: #272727;
+  box-shadow: -2px 0 10px rgba(0,0,0,0.2);
+  transition: left 0.5s ease;
+  padding: 20px;
+  z-index: 1001;
+
+  display: flex;
+  flex-direction: column;
+}
+
+/* Visible state */
+#sidebar.active {
+  left: 0;
+}
+
+/* Overlay */
+#overlay {
+  position: fixed;
+  inset: 0;
+  background: #000000;
+  
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  z-index: 1000;
+}
+
+#overlay.active {
+  opacity: 0.5;
+  pointer-events: all;
+}
+
+/* Close button */
+#closeSidebar {
+  background: none;
+  border: none;
+  font-size: 30px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -366,14 +461,6 @@ footer {
 
 
 
-/* Desktop */
-@media (max-width: 1440px) {
-
-}
-
-
-
-
 /* Tablet vertical */
 @media (max-width: 865px) {
 	
@@ -396,6 +483,13 @@ footer {
 
 
 
+}
+
+/* Phone */
+@media (max-width: 480px) {
+	body {
+		overflow-x: hidden;
+	}
 }
 
 
