@@ -34,8 +34,8 @@ html, body {
 }
 
 @font-face {
-  font-family: 'Brandon-Grotesque-light';
-  src: url('../FONT/Brandon_Grotesque_light.woff2') format('woff2');
+  font-family: 'Montserrat';
+  src: url('../FONT/Montserrat.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -287,8 +287,8 @@ button:hover p {
 
 #title2 h2 {
 	color: var(--colorMain);
-	font-family: Brandon-Grotesque-light;
-	font-size: 40px;
+	font-family: Montserrat;
+	font-size: 32px;
 	font-weight: bold;
 	padding: 5vh 15vw;
 	text-shadow: none;
@@ -310,9 +310,10 @@ button:hover p {
 	height: min-content;
 	
 	text-align: center;
-	font-family: "Brandon-Grotesque-light";
+	font-family: "Montserrat";
 	font-weight: bold;
-	font-size: xx-large;
+	font-size: x-large;
+	color: var(--colorText);
 }
 
 .infosBox span {
@@ -417,7 +418,7 @@ footer {
 }
 
 .linkColumn h2 {
-	font-family: Brandon-Grotesque-light;
+	font-family: Montserrat;
 	color: #ffffff;
 }
 
@@ -437,7 +438,7 @@ footer {
 	padding-bottom: 1vh;
 	margin: 0px;
 	font-size: 0.7em;
-	font-family: Brandon-Grotesque-light;
+	font-family: Montserrat;
 	text-align: center;
 	color: #ffffff;
 }
@@ -592,7 +593,7 @@ footer {
 
 	#title2 h2 {
 		color: var(--colorMain);
-		font-family: Brandon-Grotesque-light;
+		font-family: Montserrat;
 		font-size: large;
 		font-weight: bold;
 		padding: 5vh 2vh;
@@ -615,7 +616,7 @@ footer {
 		height: min-content;
 		
 		text-align: center;
-		font-family: "Brandon-Grotesque-light";
+		font-family: "Montserrat";
 		font-weight: bold;
 		font-size: large;
 
