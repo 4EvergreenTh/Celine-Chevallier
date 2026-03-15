@@ -34,8 +34,8 @@ html, body {
 }
 
 @font-face {
-  font-family: 'Brandon-Grotesque-light';
-  src: url('../FONT/Brandon_Grotesque_light.woff2') format('woff2');
+  font-family: 'Montserrat';
+  src: url('../FONT/Montserrat.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -286,11 +286,11 @@ button:hover p {
 }
 
 #paragraph p {
-	font-family: "Brandon-Grotesque-light";
+	font-family: "Montserrat";
 	font-weight: bold;
 	text-align: left;
 	color: var(--colorText);
-	font-size: 1.4em;
+	font-size: 1.2em;
 	padding: 3vh 10vw;
 }
 
@@ -397,7 +397,7 @@ footer {
 }
 
 .linkColumn h2 {
-	font-family: Brandon-Grotesque-light;
+	font-family: Montserrat;
 	color: #ffffff;
 }
 
@@ -417,7 +417,7 @@ footer {
 	padding-bottom: 1vh;
 	margin: 0px;
 	font-size: 0.7em;
-	font-family: Brandon-Grotesque-light;
+	font-family: Montserrat;
 	text-align: center;
 	color: #ffffff;
 }
@@ -571,7 +571,7 @@ footer {
 	/* ---------------- */
 
 	#paragraph p {
-		font-family: "Brandon-Grotesque-light";
+		font-family: "Montserrat";
 		font-weight: bold;
 		text-align: left;
 		color: var(--colorText);

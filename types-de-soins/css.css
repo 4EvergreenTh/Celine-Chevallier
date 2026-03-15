@@ -34,8 +34,8 @@ html, body {
 }
 
 @font-face {
-  font-family: 'Brandon-Grotesque-light';
-  src: url('../FONT/Brandon_Grotesque_light.woff2') format('woff2');
+  font-family: 'Montserrat';
+  src: url('../FONT/Montserrat.woff2') format('woff2');
   font-weight: normal;
   font-style: normal;
 }
@@ -74,6 +74,7 @@ a {
 	margin: 0;
 	padding: 0;
 	text-decoration: none;
+	color: inherit;
 }
 
 .row {
@@ -284,7 +285,7 @@ button:hover p {
 
 #typesDeSoins {
 	background-color: var(--colorButton);
-	font-family: Brandon-Grotesque-light;
+	font-family: Montserrat;
 	font-size: x-large;
 	color: var(--colorMain);
 	height: auto;
@@ -321,9 +322,10 @@ button:hover p {
 }
 
 .capsule h2 {
-	font-family: Brandon-Grotesque-light;
+	font-family: Montserrat;
 	text-align: center;
 	font-weight: bold;
+	font-size: x-large;
 }
 
 .capsule div {
@@ -348,7 +350,7 @@ button:hover p {
 	color: var(--colorText);
 	font-weight: bold;
 	text-align: center;
-	font-size: x-large;
+	font-size: large;
 	margin-bottom: 2vh;
 	text-align: justify;
 	width: 20vw;
@@ -474,7 +476,7 @@ footer {
 }
 
 .linkColumn h2 {
-	font-family: Brandon-Grotesque-light;
+	font-family: Montserrat;
 	color: #ffffff;
 }
 
@@ -494,7 +496,7 @@ footer {
 	padding-bottom: 1vh;
 	margin: 0px;
 	font-size: 0.7em;
-	font-family: Brandon-Grotesque-light;
+	font-family: Montserrat;
 	text-align: center;
 	color: #ffffff;
 }
@@ -649,7 +651,7 @@ footer {
 
 	#typesDeSoins {
 		background-color: var(--colorButton);
-		font-family: Brandon-Grotesque-light;
+		font-family: Montserrat;
 		font-size: medium;
 		color: var(--colorMain);
 		height: auto;
@@ -691,7 +693,7 @@ footer {
 	}
 
 	.capsule h2 {
-		font-family: Brandon-Grotesque-light;
+		font-family: Montserrat;
 		text-align: center;
 		font-weight: bold;
 	}
